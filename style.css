@@ -1,0 +1,72 @@
+
+.container-fluid {
+    background: #ccff33;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+}
+.container-fluid h1{
+    font-size: 100px;
+}
+.calculadora {
+    background: #343a40;
+    width: 400px;
+    height: 615px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pantalla {
+    width: 320px;
+    height: 80px;
+    border: solid white 2px;
+    color: hsl(71, 100%, 56%);
+    background: #212529;
+    font-size: 50px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    overflow: hidden;  /* para que los números infinitos no se salgan de los límites del div */
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* media query para pantallas chicas */
+@media screen and (max-width: 758px){
+    
+    .container-fluid{
+        text-align: left;
+    }
+    .container-fluid h1{
+        font-size: 50px;
+        padding: 0;
+        margin: 0;
+    }
+    .container-fluid h2 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .calculadora {
+        width: auto;
+        height: auto;
+    }
+    .pantalla {
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .btn {
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
